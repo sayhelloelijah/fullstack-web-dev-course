@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import 'shared/variables.css';
+@import 'shared/header.css';
+@import 'shared/buttons.css';
+
+:root {
+    color: var(--color-text-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light));
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.inner {
+    margin: 0 2rem;
+}
+
+.page-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+}

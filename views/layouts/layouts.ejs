@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.css">
     <title>say-mybrary</title>
     <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
     <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
@@ -16,9 +17,13 @@
 </head>
 
 <body>
-    <%- include('../partials/header.ejs') %>
-    <%- include('../partials/errorMessage.ejs') %>
-    <%- body %>
+    <div class="container">
+        <%- include('../partials/header.ejs') %>
+        <div class="inner">
+            <%- include('../partials/errorMessage.ejs') %>
+            <%- body %>
+        </div>
+    </div>
 </body>
 
 </html>
